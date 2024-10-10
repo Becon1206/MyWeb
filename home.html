@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="icon">
+            <i class="bx bx-code-block"></i>
+            <h2 onclick="reloadPage()">Studify</h2>
+        </div>
+        <nav id="nav1">
+            <a href="#" id="home-tab" class="tab-link active"><strong>Home</strong></a>
+            <a href="#" id="exercise-tab" class="tab-link"><strong>Exercise</strong></a>
+            <a href="#" id="test-tab" class="tab-link"><strong>Test Case</strong></a>
+        </nav>
+        <a href="#" id="login-link"><strong>Login</strong></a>
+    </header>
+
+    <!-- Dark overlay background -->
+    <div id="overlay"></div>
+    <div id="login-container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form action="/dashboard" method="post">
+                <div class="input-group">
+                    <label for="username">Username/Email :</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password: </label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Tab content sections -->
+    <div id="home" class="tab-content active">
+        <div id="content">
+            <h1>Welcome to Studify!</h1>
+            <p>"Ready to become a coding wizard? Join us and unleash your creativity as you build amazing projects and
+                master the art of programming!"</p>
+        </div>
+
+
+    </div>
+
+    <div id="exercise" class="tab-content">
+        <section class="filter-section">
+            <label for="language-filter">Filter by language:</label>
+            <select id="language-filter">
+                <option value="all">All</option>
+                <option value="c">C</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+        </section>
+
+        <div class="exercise-container">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <h3>Filters</h3>
+                <section class="filter">
+                    <label for="filter">Difficulty level:</label>
+                    <select id="filter">
+                        <option value="#">Easy</option>
+                        <option value="#">Medium</option>
+                        <option value="#">Hard</option>
+                    </select>
+                </section>
+            </div>
+
+            <!-- Main Exercise Content -->
+            <section class="exercises-list">
+                <div class="exercise">
+                    <h3>Merge Two Sorted Lists</h3>
+                    <p>Topics: Linked List, Recursion</p>
+                    <p>Time: 20 minutes</p>
+                    <p>Difficulty level: Easy</p>
+                    <button class="start-btn">Start</button>
+                </div>
+
+                <div class="exercise">
+                    <h3>Search in Rotated Sorted Array</h3>
+                    <p>Topics: Array, Binary Search</p>
+                    <p>Time: 30 minutes</p>
+                    <p>Difficulty level: Medium</p>
+                    <button class="start-btn">Start</button>
+                </div>
+
+                <div class="exercise">
+                    <h3>Word Ladder</h3>
+                    <p>Topics: Hash Table, String, Breadth-First Search</p>
+                    <p>Time: 45 minutes</p>
+                    <p>Difficulty level: Hard</p>
+                    <button class="start-btn">Start</button>
+                </div>
+
+                <div class="exercise">
+                    <h3>Trapping Rain Water</h3>
+                    <p>Topics: Array, Two Pointers, Dynamic Programming, Stack, Monotonic Stack</p>
+                    <p>Time: 35 minutes</p>
+                    <p>Difficulty level: Hard</p>
+                    <button class="start-btn">Start</button>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="test" class="tab-content">
+        <section>
+            <h2>Test Case</h2>
+            <p></p>
+        </section>
+    </div>
+
+</body>
+<script src="main.js"></script>
+
+</html>

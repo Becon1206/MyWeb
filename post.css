@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #F0F4F8;
+    color: black;
+}
+
+header {
+    background-color: #81C784;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#icon {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#icon h2 {
+    margin-left: 10px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+header nav a:hover {
+    background-color: #66BB6A;
+    border-radius: 5px;
+}
+
+header a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+header a:hover {
+    background-color: #66BB6A;
+}
+
+/* Hiding all tab content sections by default */
+.tab-content {
+    display: none;
+}
+
+/* Show active tab content */
+.tab-content.active {
+    display: block;
+}
+
+/* Adjust styles for better visibility */
+header nav a.active {
+    background-color: #79AC78;
+    border-radius: 5px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#login-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    z-index: 1000;
+    width: 400px;
+}
+
+.login-box h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #43A047;
+}
+
+.forgot-password {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #4C6A92;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Background overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+#login-container.show {
+    display: block;
+}
+
+
+.filter-section {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.filter-section label {
+    margin-right: 10px;
+}
+
+.filter-section select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.exercise-container {
+    display: flex;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    margin-bottom: 10px;
+}
+
+.sidebar select option {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar select option:hover {
+    color: #007bff;
+}
+
+/* Exercise list styling */
+.exercises-list {
+    width: 80%;
+}
+
+.exercises-list .exercise {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home {
+    background-image: url('https://cdn.pixelbin.io/v2/dummy-cloudname/sr.upscale(t:4x)/__editor/__upscale_media/2024-10-10/original-067da4a35217a1f590cc4c5a0e0b4822-chspNRQvy.png?download=true');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 1.5;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    padding: 210px;
+    text-align: center;
+
+}
